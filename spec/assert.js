@@ -1,25 +1,30 @@
-assert.js
+const check = (title, cb) => {
+  try{
+    cb();
+    console.log(`PASS ${title}`);
+  } catch(e) {
+    console.log(`FAIL ${title}`);
+    console.log(e.stack);
+  }
+};
+
 const assert = {
- isTrue: function(assertionToCheck) {
-  if (!assertionToCheck) {
-   throw new Error("Assertion failed: " + assertionToCheck + " is not truthy");
-  } else {
-   console.log ("Life is great");
+  isTrue: function(assertionToCheck) {
+    if (!assertionToCheck) {
+      throw new Error("Assertion failed: " + assertionToCheck + " is not truthy");
+    }
+  },
+
+  include: function(array, contents) {
+    let arrayLength = array.length;
+    let times = 0
+    for (let i = 0; i < arrayLength; i++) {
+      if (array[i] === contents) {
+        times++;
+      }
+    }
+    if (times === 0) {
+      throw new Error("Assertion failed: " + array + " does not include " + contents);
+    }
   }
- },
-​
- include: function(array, contents) {
-  let arrayLength = array.length;
-  let times = 0
-  for (let i = 0; i < arrayLength; i++) {
-   if (array[i] === contents) {
-    times++;
-   }
-  }
-  if (times === 0) {
-   throw new Error("Assertion failed: " + array + " does not include " + contents);
-  } else {
-   console.log ("Life is great")
-  }
- }
 };
