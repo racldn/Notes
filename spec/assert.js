@@ -26,5 +26,11 @@ const assert = {
     if (times === 0) {
       throw new Error("Assertion failed: " + array + " does not include " + contents);
     }
+  },
+
+  isEmpty: function (array) {
+    if (!array.length === 0) {
+      throw new Error("Assertion failed: " + array + " is not empty");
+    }
   }
 };
