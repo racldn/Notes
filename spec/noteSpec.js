@@ -1,19 +1,6 @@
-(function testCircleRadiusDefaultsTo10() {
-  var circle = new Circle();
-  assert.isTrue(circle.radius === 10);
+(function hasABody() {
+  let note = new Notes('Test Body');
+  check('Note has body as defined', () => {
+  assert.isTrue(note.body === 'Test Body');
+  })
 })();
-
-
-
-(function testArrayContents() {
-  assert.include("Chloe", "T");
-})();
-
-(function noteCheck() {
-  let note1 = new Note("Birthday");
-  assert.isTrue(note1.title === "Birthday");
-})();
-
-// testCircleRadiusDefaultsTo10();
-//
-// testArrayContents();

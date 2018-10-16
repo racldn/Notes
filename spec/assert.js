@@ -1,6 +1,6 @@
-const check = (title, cb) => {
+const check = (title, callback) => {
   try{
-    cb();
+    callback();
     console.log(`PASS ${title}`);
   } catch(e) {
     console.log(`FAIL ${title}`);
