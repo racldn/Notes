@@ -1,4 +1,3 @@
-Chloe Mingay [4:50 PM]
 assert.js
 const assert = {
  isTrue: function(assertionToCheck) {
