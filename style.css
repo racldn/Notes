@@ -1,0 +1,25 @@
+h1 {
+  font-size: 100px;
+  font-family: 'ConnectionRegular';
+  font-weight: normal;
+  text-align: center;
+  color: #7FFF00;
+}
+
+
+body {
+    background-color: black;
+}
+
+input {
+    width: 500px;
+    height: 250px;
+    background-color: black;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 4px;
+    color: #7FFF00;
+    font-family: 'ConnectionRegular';
+    font-size: 16px;
+
+}
