@@ -1,25 +1,28 @@
-h1 {
-  font-size: 100px;
+body {
+    background-color: black;
+}
+
+#title {
+  font-size: 50px;
   font-family: 'ConnectionRegular';
   font-weight: normal;
   text-align: center;
   color: #7FFF00;
 }
 
-
-body {
-    background-color: black;
+#notebox {
+  width: 550px;
+  margin: auto;
 }
 
-input {
+#noteboxinput {
     width: 500px;
     height: 250px;
     background-color: black;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border: 2px solid;
     border-radius: 4px;
     color: #7FFF00;
     font-family: 'ConnectionRegular';
     font-size: 16px;
-
 }
