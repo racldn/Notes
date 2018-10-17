@@ -3,6 +3,8 @@
 <html lang="en" dir="ltr">
 
   <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/connection" type="text/css"/>
     <title>Notepad</title>
@@ -17,10 +19,13 @@
     <div>
       <form>
       <center>
-        <input type="text" name="noteinput"><br>
+        <input type="text" name="noteinput" id="notebox"><br>
+        
       </form>
 
+      <button type="button" id="savebtn">SAVE</button>
 
+      <div id="notes_container">this is a container</div>
       <!-- <form action = "" method = "get">
                <textarea rows = "5" cols = "60" name = "note">
                   Enter your note here...
@@ -33,5 +38,9 @@
 
 
   </body>
+
+  <script src="src/notepad.js"></script>
+  <script src="src/note.js"></script>
+  <script src="src/ui.js"></script>
 
 </html>
