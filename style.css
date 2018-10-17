@@ -3,26 +3,55 @@ body {
 }
 
 #title {
-  font-size: 50px;
-  font-family: 'ConnectionRegular';
-  font-weight: normal;
-  text-align: center;
-  color: #7FFF00;
-}
+    font-size: 50px;
+    font-family: 'ConnectionRegular';
+    font-weight: normal;
+    text-align: center;
+    color: #7FFF00;
+  }
 
 #notebox {
-  width: 550px;
-  margin: auto;
-}
+    width: 550px;
+    margin: auto;
+  }
 
 #noteboxinput {
     width: 500px;
     height: 250px;
-    background-color: black;
+    background-image: url("https://v.wpimg.pl/MzkzNDQ0JBNENWFyZQQ1TlpMYSB_Rz0TBh1gND0ffENcTnp0ZAl7V0ZLeXxgAHRNXElhNyRAKAhGFy82OF9gGBkVPWk8UT8TBFQkNDY=");
     padding: 10px 30px;
     border: 2px solid;
     border-radius: 4px;
-    color: #7FFF00;
+    /* color: #7FFF00; */
+    color: white;
     font-family: 'ConnectionRegular';
     font-size: 16px;
+}
+
+#savebtn {
+    width: 100px;
+    height: 50px;
+    color: #7FFF00;
+    border-color: #7FFF00;
+    background-color: black;
+    font-family: 'ConnectionRegular';
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+#notes_container {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 70px;
+}
+
+.note {
+    font-size: 20px;
+    font-family: 'ConnectionRegular';
+    color: #7FFF00;
+    font-weight: normal;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
 }
