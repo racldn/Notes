@@ -1,8 +1,9 @@
 let notepad = new Notepad();
 const saveButton = document.querySelector('#savebtn');
-const noteConent = document.querySelector('#notebox').value;
+
 
 const appendNote = () => {
+   
     let notesContainer = document.querySelector('#notes_container');
     let lastEntry = notepad.notes.length - 1;
     let div = document.createElement('div')
@@ -13,6 +14,7 @@ const appendNote = () => {
 };
 
 saveButton.addEventListener('click', () => {
+    let noteConent = document.querySelector('#notebox').value;
     notepad.addNote(noteConent);
     appendNote();
 })
